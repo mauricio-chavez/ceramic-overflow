@@ -2,6 +2,9 @@
   "name": "ceramic_overflow",
   "version": "1.0.0",
   "description": "Ceramic Overflow Backend",
+  "engines": {
+    "node": "11.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index",

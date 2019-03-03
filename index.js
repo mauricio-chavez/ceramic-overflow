@@ -5,6 +5,7 @@ const suppliersRouter = require('./routes/suppliers');
 const libraryRouter = require('./routes/library');
 const usersRouter = require('./routes/users');
 
+const PORT = process.env.PORT || 8080
 const app = express();
 
 
@@ -37,6 +38,6 @@ app.all('*', (req, res) => {
 });
 
 
-const server = app.listen(8080, () => {
+const server = app.listen(PORT, () => {
     console.log(`Listening on http://127.0.0.1:${ server.address().port }/`);
 })
