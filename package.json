@@ -4,6 +4,8 @@
   "description": "Ceramic Overflow Backend",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/mauricio-chavez/ceramic-overflow/issues"
   },
-  "homepage": "https://github.com/mauricio-chavez/ceramic-overflow#readme"
+  "homepage": "https://github.com/mauricio-chavez/ceramic-overflow#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "connect": "^3.6.6",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16"
+  }
 }
